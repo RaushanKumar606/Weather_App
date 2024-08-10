@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search_box">
+            <input type="text" id="Search" class="search_input" placeholder="Enter Location" />
+            <button class="btn">Search</button>
+        </div>
+
+        <div class="weather">
+            <img src="/images/rain.png" class="weather_icon"  />
+            <h1 class="temp1">20°C</h1>
+            <h2 class="city">Bihar</h2>
+
+            <div class="weather_Detail">
+               
+                <div>
+                    <p class="Humidity">50%</p>
+                    <p> <img src="/images/humidity.png" class="image1" alt="">    Humidity</p>
+                </div>
+               
+                <div>
+                    <p class="wind">50 km/h</p>
+                    
+                    <p> <img src="/images/wind.png" class="image1" alt=""> Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js">
+        // const apiKey = "6d83156e4e40ca97d0c6924b832fe00c";
+        // const searchBox = document.querySelector("#Search");
+        // const searchBtn = document.querySelector(".btn");
+        // const weatherIcon = document.querySelector("weather_icon")
+
+        // async function getWeather(city) {
+        //     try {
+        //         const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
+        //         if (!res.ok) {
+        //             throw new Error(`HTTP error! status: ${res.status}`);
+        //         }
+        //         const data = await res.json();
+        //         console.log(data);
+
+        //         // Update UI with weather data
+        //         const cityElem = document.querySelector(".city");
+        //         const tempElem = document.querySelector(".temp1");
+        //         const humidityElem = document.querySelector(".Humidity");
+        //         const windElem = document.querySelector(".wind");
+
+        //         if(data.weather[0].main == " Cloud"){
+        //             weatherIcon.src = "/images/clouds.png";
+        //         }
+
+        //         else if(data.weather[0].main =="Clear"){
+        //             weatherIcon.src = "/images/clear.png";
+        //         }
+        //         else if(data.weather[0].main =="Drizzl"){
+        //             weatherIcon.src = "/images/drizzl.png";
+        //         }
+        //         else if(data.weather[0].main =="Rain"){
+        //             weatherIcon.src = "/images/rain.png";
+        //         }
+        //         else if(data.weather[0].main =="Search"){
+        //             weatherIcon.src = "/images/search.png";
+        //         }
+        //         else if(data.weather[0].main =="Snow"){
+        //             weatherIcon.src = "/images/sow.png";
+        //         }
+        //         else if(data.weather[0].main =="Mist"){
+        //             weatherIcon.src = "/images/mist.png";
+        //         }
+               
+
+        //         if (cityElem && tempElem && humidityElem && windElem) {
+        //             cityElem.innerHTML = data.name;
+        //             tempElem.innerHTML = Math.round(data.main.temp);
+        //             humidityElem.innerHTML = data.main.humidity + "%";
+        //             windElem.innerHTML = data.wind.speed + " km/h";
+        //             // Optional: Update weather icon
+        //             // document.querySelector(".weather_icon").src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+        //         } else {
+        //             console.error('Some elements are missing in the DOM.');
+        //         }
+        //     } catch (error) {
+        //         console.error('Error fetching weather data:', error);
+        //     }
+        // }
+
+        // searchBtn.addEventListener("click", () => {
+        //     const city = searchBox.value;
+        //     if (city) {
+        //         getWeather(city);
+        //     } else {
+        //         console.log('Please enter a city name.');
+        //     }
+        // });
+    </script>
+</body>
+</html>
