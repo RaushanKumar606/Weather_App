@@ -14,7 +14,7 @@ async function getWeather(city) {
 
         // Update UI with weather data
         const cityElem = document.querySelector(".city");
-        const tempElem = document.querySelector(".temp1");
+        const tempElem = document.querySelector(".temp");
         const humidityElem = document.querySelector(".Humidity");
         const windElem = document.querySelector(".wind");
 
@@ -44,7 +44,7 @@ async function getWeather(city) {
 
         if (cityElem && tempElem && humidityElem && windElem) {
             cityElem.innerHTML = data.name;
-            tempElem.innerHTML = Math.round(data.main.temp + "°C");
+            tempElem.innerHTML = Math.round(data.main.temp) + "°C";
             humidityElem.innerHTML = data.main.humidity + "%";
             windElem.innerHTML = data.wind.speed + " km/h";
             // Optional: Update weather icon

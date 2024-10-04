@@ -1,12 +1,25 @@
-body{
-   background: #222;
+ body{
+   background-image: url(back.png);
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   overflow: hidden;
+   background-size: cover;
+
+} 
+
+
+
+.main{
+   height: 0%;
 }
 .container{
-   width: 90%;
-   max-width: 450px;
-   background: linear-gradient(135deg , #00feba , #5b548a);
-   color: #fff;
-   margin: 80px auto 0;
+   width: 40%;
+
+   max-width: 400px;
+   background: linear-gradient(135deg , #06779d , #5e5595);
+   color: white;
+   margin: 8px auto 0;
    border-radius: 20px;
    padding: 40px 35px;
    text-align: center;
@@ -17,7 +30,7 @@ body{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   left: 100px;
+   left: px;
 
 }
 .search_box input {
@@ -27,10 +40,10 @@ body{
    background: rgb(235, 255, 252);
    color: #555;
    padding: 10px 25px;
-   height: 60px;
+   height: 30px;
    border-radius: 30px;
    flex: 1;
-   margin-right: 2.5 rem;
+   margin-right: 2 rem;
    font-size: 20px;
 
 }
@@ -39,17 +52,18 @@ body{
    font-weight: 700;
 }
 .city{
-   font-size: 5rem;
+   font-size: 3rem;
 }
 .search_box button {
    border: 0;
    outline: 0;
-   background: rgb(235, 255, 252);
-   color: #555;
+   background: rgb(17, 220, 128);
+   color:white;
    padding: 10px 25px;
-   height: 60px;
+   height: 50px;
    width: 120%;
    border-radius: 60px;
+   margin-left: 15px;
    
    flex: 1;
    
@@ -64,7 +78,7 @@ body{
 
 }
 .image1{
-   height: 30px;
+   height: 20px;
 }
 p{
    font-size: 20px;
